@@ -10,5 +10,7 @@ namespace API.Entities
         public int Id { get; set; } //Name by convention for EF
         public string UserName { get; set; } //Name by convention for EF
 
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
     }
 }
